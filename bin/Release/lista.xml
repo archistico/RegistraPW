@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='lista.xsl'?>
+<ListaPassword>
+  <Password>
+    <sito>libero.it</sito>
+    <nomeUtente>alberto</nomeUtente>
+    <matrice>provola</matrice>
+    <pw>Sv2-Qc7(Eb1|Rx3/</pw>
+  </Password>
+  <Password>
+    <sito>libero.it</sito>
+    <nomeUtente>silvia</nomeUtente>
+    <matrice>provola</matrice>
+    <pw>Sx2#Ec4(Fb6-Rq3|</pw>
+  </Password>
+  <Password>
+    <sito>amazon.com</sito>
+    <nomeUtente>alberto</nomeUtente>
+    <matrice>provola</matrice>
+    <pw>Av1&amp;Qk7(Wb2|Rx3/</pw>
+  </Password>
+  <Password>
+    <sito>lastampa.it</sito>
+    <nomeUtente>anonimo</nomeUtente>
+    <matrice>provola</matrice>
+    <pw>Fc1|Ad4(Qb0!Re3£</pw>
+  </Password>
+  <Password>
+    <sito>prova.it</sito>
+    <nomeUtente>celeste</nomeUtente>
+    <matrice>provola</matrice>
+    <pw>Hj7$Ek6(Sb3%Rf1|</pw>
+  </Password>
+  <Password>
+    <sito>gmail</sito>
+    <nomeUtente>potato</nomeUtente>
+    <matrice>secret</matrice>
+    <pw>De0(Fq3;Tw2|Pr8!</pw>
+  </Password>
+</ListaPassword>

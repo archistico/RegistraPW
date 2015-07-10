@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+</head>
+<body style="font-family:'Lucida Console', Monaco, monospace" >
+<h2>Lista delle password</h2>
+<script>
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","lista.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+
+document.write("<table><tr bgcolor='#9acd32'><th>Sito web</th><th>Nome Utente</th><th>Matrice</th><th>Password</th></tr>");
+var x=xmlDoc.getElementsByTagName("Password");
+for (i=0;i<x.length;i++)
+  { 
+  document.write("<tr><td>");
+  document.write(x[i].getElementsByTagName("sito")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  variable = x[i].getElementsByTagName("nomeUtente")[0].childNodes[0].nodeValue
+  if (variable === undefined || variable === null) {
+    document.write(" ");
+  } 
+  else
+  {
+  document.write(x[i].getElementsByTagName("nomeUtente")[0].childNodes[0].nodeValue);
+  }
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("matrice")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("pw")[0].childNodes[0].nodeValue);
+  document.write("</td></tr>");
+  }
+document.write("</table>");
+</script>
+
+</body>
+</html>
